@@ -1,0 +1,239 @@
+html * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-image: url("../assets/fondo2.jpg");
+    color: #ffffff;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: 80% 30%;
+    font-family: "Montserrat", sans-serif;
+    text-shadow: 0px 0.5px 2px #000000;
+}
+
+header {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+.barra {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #000000d5;
+    position: sticky;
+    top: 0;
+    height: 10vh;
+}
+
+nav a,
+.barra,
+h5 {
+    padding: 1.2vh 1vw;
+    text-decoration: none;
+    color: #ffffff;
+}
+
+h5 {
+    font-size: 2vw;
+}
+
+.titulo {
+    flex-grow: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-left: 10vw;
+}
+
+.titulo h2 {
+    font-size: 10vw;
+}
+
+.titulo h1,
+h4 {
+    font-size: 1.8vw;
+}
+
+.events,
+.contenido,
+article,
+.registration {
+    display: flex;
+}
+
+.events,
+.rules,
+.registration {
+    min-height: 90vh;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    backdrop-filter: blur(5px);
+    background-color: #30303059;
+}
+
+
+.events .contenido {
+    justify-content: space-evenly;
+    height: 35vh;
+}
+
+.contenido article {
+    width: 25%;
+    height: 45vh;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 5vh;
+}
+
+a,
+p {
+    font-size: 1vw;
+}
+
+h3 {
+    font-size: 3vw;
+    color: black;
+}
+
+h4,
+p {
+    padding-top: 1vh;
+}
+
+.contenido img {
+    width: 8.5vw;
+}
+
+/* GAME INFO */
+
+.gameSection {
+    min-height: 93vh;
+    display: flex;
+    justify-content: flex-end;
+    overflow-y: auto;
+}
+
+.game2 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+table,
+.article_table p,
+.article_table div {
+    width: 80vw;
+    text-align: start;
+}
+
+tr td,
+thead tr {
+    background-color: #bd1b1b;
+}
+
+table,
+tr td,
+.file2 th,
+.article_table div,
+.rules_article,
+.boton {
+    margin-top: 1vh;
+    text-align: center;
+    padding: 1vw;
+}
+
+iframe {
+    border: 1px solid rgb(252, 252, 252);
+    border-radius: 30px;
+}
+
+
+
+/* RULES */
+
+.rules_article>* {
+    width: 75vw;
+    text-align: start;
+}
+
+.rules_article h4 {
+    color: black;
+}
+
+/* REGISTRATION */
+
+.registration {
+    align-items: center;
+}
+
+form {
+    background-color: #bd1b1b;
+    width: 50vw;
+}
+
+fieldset {
+    padding: .5vw;
+}
+
+input[id="address"],
+.boton {
+    width: 70%;
+}
+
+label+input,
+fieldset {
+    margin-right: 1vw;
+    border: none;
+    outline: none;
+}
+
+input[id="city"],
+[id="lastName"],
+[id="parentSignature"] {
+    width: 20%;
+}
+
+.closest,
+.position {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+}
+
+.closest div {
+    width: 30%;
+}
+
+.position div {
+    width: 20%;
+}
+
+.boton,
+input {
+    padding: .3vw;
+}
+
+/* HOVER */
+
+iframe:hover {
+    height: 230px;
+    width: 350px;
+    transition: 1s;
+}
+
+article:hover {
+    height: 55vh;
+    transition: 1s;
+}
+
+a:hover {
+    border-bottom: .5px solid #1f1d1dea;
+    transition: 1s;
+}
